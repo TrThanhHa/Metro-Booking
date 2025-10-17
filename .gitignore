@@ -1,0 +1,13 @@
+
+node_modules/
+vendor/
+
+.env
+*.local
+
+/dist
+/build
+/cache
+
+.DS_Store
+Thumbs.db
