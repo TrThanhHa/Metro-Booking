@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新規登録 - HCMC Metro</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
 
+    <header class="main-header">
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/HCMC_Metro_logo.png" alt="HCMC Metro Logo" id="header-logo"> 
+            </div>
+            <div class="auth-lang">
+                <span id="user-greeting" class="auth-link" style="display: none;"></span> 
+                <span id="auth-buttons">
+                    <a href="signup.html" class="auth-link active">登録</a> | 
+                    <a href="login.html" class="auth-link">ログイン</a>
+                </span>
+                <span class="lang">🇯🇵</span>
+            </div>
+        </div>
+        <h1 class="metro-title">HCMC METRO</h1>
+        <div class="datetime">
+            <p id="current-date-time"></p> 
+            <p><i class="fas fa-cloud"></i> 29°C</p>
+        </div>
+    </header>
+
+    <nav class="main-menu">
+        <a href="homepage.html" class="menu-item"><i class="fas fa-home"></i></a>
+        <a href="homepage.html" class="menu-item dropdown" id="info-menu">一般情報 ▼</a>
+        <a href="#" class="menu-item dropdown">詳細情報 ▼</a>
+        <a href="booking.html" class="menu-item">チケット購入</a>
+        <a href="#" class="menu-item">メンテナンス</a>
+        <a href="#" class="menu-item">一般規定</a>
+        <a href="#" class="menu-item">サポート</a>
+    </nav>
+    
+    <div id="content-container">
+        <div id="signup-section" class="auth-box page-section" style="display: block;">
+            <h2 class="section-title">新規登録</h2>
+            <form id="register-form">
+                
+                <label for="reg-name">お名前 (Name):</label>
+                <input type="text" id="reg-name" required placeholder="例: Yamada Taro">
+
+                <label for="reg-email">メールアドレス (Email):</label>
+                <input type="email" id="reg-email" required placeholder="example@metro.com">
+
+                <label for="reg-password">パスワード (Password):</label>
+                <div class="password-input-group">
+                    <input type="password" id="reg-password" required placeholder="8文字以上、大文字・小文字・数字含む">
+                    <span class="toggle-password" data-target="reg-password">👁️</span>
+                </div>
+                <p class="password-note">パスワードは、8文字以上で、大文字・小文字・数字をそれぞれ1文字以上含めてください。</p>
+
+                <label for="reg-confirm-password">パスワード確認 (Confirm Password):</label>
+                <div class="password-input-group">
+                    <input type="password" id="reg-confirm-password" required placeholder="もう一度入力してください">
+                    <span class="toggle-password" data-target="reg-confirm-password">👁️</span>
+                </div>
+
+                <button type="submit" class="submit-btn">登録する</button>
+                <p class="switch-auth">既にアカウントをお持ちですか？ <a href="login.html">ログイン</a></p>
+            </form>
+        </div>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
