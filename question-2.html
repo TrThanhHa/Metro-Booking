@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポート - HCMC Metro</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
 
+    <header class="main-header">
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/HCMC_Metro_logo.png" alt="HCMC Metro Logo" id="header-logo"> 
+            </div>
+            <div class="auth-lang">
+                <span id="user-greeting" class="auth-link" style="display: none;"></span> 
+                <span id="auth-buttons">
+                    <a href="signup.html" class="auth-link">登録</a> | 
+                    <a href="login.html" class="auth-link active">ログイン</a>
+                </span>
+                <span class="lang">🇯🇵 日本語</span>
+            </div>
+        </div>
+        <h1 class="metro-title">HCMC METRO</h1>
+        <div class="datetime">
+            <p id="current-date-time"></p> 
+            <p><i class="fas fa-cloud"></i> 29°C</p>
+        </div>
+    </header>
+
+    <nav class="main-menu">
+        <a href="homepage.html" class="menu-item"><i class="fas fa-home"></i></a>
+        <a href="info-menu.html" class="menu-item" id="info-menu">一般情報</a>
+        <a href="#" class="menu-item">詳細情報</a>
+        <a href="booking.html" class="menu-item">チケット購入</a>
+        <a href="#" class="menu-item">メンテナンス</a>
+        <a href="rules.html" class="menu-item">一般規定</a>
+        <a href="help.html" class="menu-item">サポート</a>
+    </nav>
+    
+    <div id="content-container">
+        <section class="faq-detail-section">
+            <h1 class="faq-detail-title">よくある質問 (FAQ)</h1>
+            
+            <div class="faq-q-a">
+                <h2>Q: 6歳未満の子供は乗車券が必要ですか？</h2>
+                <div class="answer-box highlight-answer">
+                    <p><strong>いいえ、6歳未満のお子様はメトロの乗車券は必要ありません。無料でご利用いただけます。</strong></p>
+                    <p>お子様以外の乗車券をご購入希望の場合は、<a href="booking.html" class="inline-link"><strong>こちら</strong></a>からご購入いただけます。</p>
+                </div>
+            </div>
+            
+            <div class="back-link">
+                <a href="help.html">← サポートページに戻る</a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                HCMC METRO
+            </div>
+
+            <nav class="footer-links">
+                <a href="about.html">会社概要</a>
+                <a href="services.html">サービス</a>
+                <a href="news.html">プレス</a>
+                <a href="careers.html">採用情報</a>
+                <a href="help.html">FAQ</a>
+                <a href="legal.html">利用規約</a>
+                <a href="help.html">お問い合わせ</a>
+            </nav>
+
+            <div class="footer-social">
+                <p>最新情報をチェック</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/MAURHCMC/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hcmc.metro/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/hcmcmetro" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@hcmcmetro" target="_blank" aria-label="Youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer-copyright">
+                &copy; 2025 HCMC Metro. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
