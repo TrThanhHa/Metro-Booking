@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生チケット - HCMC Metro</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
 
+    <header class="main-header">
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/HCMC_Metro_logo.png" alt="HCMC Metro Logo" id="header-logo"> 
+            </div>
+            <div class="auth-lang">
+                <span id="user-greeting" class="auth-link" style="display: none;"></span> 
+                <span id="auth-buttons">
+                    <a href="signup.html" class="auth-link">登録</a> | 
+                    <a href="login.html" class="auth-link active">ログイン</a>
+                </span>
+                <span class="lang">🇯🇵 日本語</span>
+            </div>
+        </div>
+        <h1 class="metro-title">HCMC METRO</h1>
+        <div class="datetime">
+            <p id="current-date-time"></p> 
+            <p><i class="fas fa-cloud"></i> 29°C</p>
+        </div>
+    </header>
+
+    <nav class="main-menu">
+        <a href="homepage.html" class="menu-item"><i class="fas fa-home"></i></a>
+        <a href="info-menu.html" class="menu-item" id="info-menu">一般情報</a>
+        <a href="#" class="menu-item">詳細情報</a>
+        <a href="booking.html" class="menu-item">チケット購入</a>
+        <a href="#" class="menu-item">メンテナンス</a>
+        <a href="rules.html" class="menu-item">一般規定</a>
+        <a href="help.html" class="menu-item">サポート</a>
+    </nav>
+
+    <div id="content-container">
+        <section class="student-guide-section">
+            <h1 class="guide-title">学生・生徒向けアカウント登録ガイド</h1>
+            
+            <div class="highlight-info">
+                <p><strong>学生・生徒の皆様へ:</strong></p>
+                <p>学割定期券の料金は、<strong>月額わずか150,000VND</strong>でご利用いただけます。</p>
+            </div>
+
+            <h2 class="section-heading">優待アカウント登録手順</h2>
+
+            <div class="step-card">
+                <div class="step-number">STEP 1</div>
+                <h3>ホーチミン市デジタル市民アプリで情報登録</h3>
+                <ol>
+                    <li>アプリを開き、「メトロ割引」を選択します。</li>
+                    <li>指示に従い、個人情報をすべて入力します。</li>
+                    <li>学生証/生徒手帳の顔写真付きページ（または学校発行の在籍証明書）を撮影し、アップロードします。</li>
+                </ol>
+                <p class="note"><strong>【注意】</strong>デジタル市民アプリへのログインには、必ずVNeIDアカウントを使用する必要があります。</p>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">STEP 2</div>
+                <h3>情報認証を待機</h3>
+                <ul>
+                    <li>提出された書類は、<strong>1～2日以内</strong>に審査および認証されます。</li>
+                    <li>認証が正常に完了すると、お客様の情報はメトロシステムに自動的に同期されます。</li>
+                </ul>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">STEP 3</div>
+                <h3>国民身分証明書 (CCCD) と HCMC Metro HURC アプリの連携</h3>
+                <ul>
+                    <li>HCMC Metro HURC アプリを開き、「アカウント」メニューへ進みます。</li>
+                    <li>国民身分証明書/CCCDを連携させます。</li>
+                    <li>連携が完了すると、システムは自動的に「HSSV (学生・生徒)」バッジを付与します。</li>
+                </ul>
+            </div>
+
+            <div class="step-card">
+                <div class="step-number">STEP 4</div>
+                <h3>優待定期券の購入と利用</h3>
+                <ul>
+                    <li>連携成功後、アプリ内で学生・生徒向け定期券を<strong>150,000VND</strong>で購入できます。</li>
+                    <li>乗車には、以下のいずれかの方法をご利用ください:
+                        <ul>
+                            <li>アプリから<strong>QRコード</strong>を提示し、改札口でスキャンする。</li>
+                            <li><strong>CCCD</strong>を直接、改札口のリーダーにかざす。</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="action-footer">
+                 <button onclick="window.location.href='booking.html'">早速、学割チケットを購入する</button>
+                 <button onclick="window.location.href='homepage.html'" class="back-home-btn">ホームに戻る</button>
+            </div>
+            
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                HCMC METRO
+            </div>
+
+            <nav class="footer-links">
+                <a href="about.html">会社概要</a>
+                <a href="services.html">サービス</a>
+                <a href="news.html">プレス</a>
+                <a href="careers.html">採用情報</a>
+                <a href="faq.html">FAQ</a>
+                <a href="legal.html">利用規約</a>
+                <a href="contact.html">お問い合わせ</a>
+            </nav>
+
+            <div class="footer-social">
+                <p>最新情報をチェック</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/MAURHCMC/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hcmc.metro/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/hcmcmetro" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@hcmcmetro" target="_blank" aria-label="Youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer-copyright">
+                &copy; 2025 HCMC Metro. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
