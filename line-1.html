@@ -1,1 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一般情報 - HCMC Metro</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
 
+    <header class="main-header">
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/HCMC_Metro_logo.png" alt="HCMC Metro Logo" id="header-logo"> 
+            </div>
+            <div class="auth-lang">
+                <span id="user-greeting" class="auth-link" style="display: none;"></span> 
+                <span id="auth-buttons">
+                    <a href="signup.html" class="auth-link">登録</a> | 
+                    <a href="login.html" class="auth-link active">ログイン</a>
+                </span>
+                <span class="lang">🇯🇵 日本語</span>
+            </div>
+        </div>
+        <h1 class="metro-title">HCMC METRO</h1>
+        <div class="datetime">
+            <p id="current-date-time"></p> 
+            <p><i class="fas fa-cloud"></i> 29°C</p>
+        </div>
+    </header>
+
+    <nav class="main-menu">
+        <a href="homepage.html" class="menu-item"><i class="fas fa-home"></i></a>
+        <a href="info-menu.html" class="menu-item" id="info-menu">一般情報</a>
+        <a href="#" class="menu-item">詳細情報</a>
+        <a href="booking.html" class="menu-item">チケット購入</a>
+        <a href="#" class="menu-item">メンテナンス</a>
+        <a href="rules.html" class="menu-item">一般規定</a>
+        <a href="help.html" class="menu-item">サポート</a>
+    </nav>
+    
+    <div id="content-container">
+        <section class="line-detail-section">
+            <h1 class="line-title line-1-color">ホーチミン市 メトロ1号線 (Ben Thanh - Suoi Tien)</h1>
+            <div class="line-map-image">
+                <img src="images/line_1.png" alt="Metro Line 1 Map: Ben Thanh to Suoi Tien" title="メトロ1号線路線図">
+            </div>            
+            <div class="station-list-container">
+                <div class="station-header">
+                    <span class="col-num">No.</span>
+                    <span class="col-en">英語</span>
+                    <span class="col-jp">日本語</span>
+                    <span class="col-note">Note</span>
+                </div>
+                
+                <div class="station-item station-start">
+                    <span class="col-num num-start">L1 01</span>
+                    <span class="col-en">Ben Thanh Station</span>
+                    <span class="col-jp">ベンタイン駅</span>
+                    <span class="col-note">地下鉄駅</span>
+                </div>
+                
+                <div class="station-item">
+                    <span class="col-num">L1 02</span>
+                    <span class="col-en">Opera House Station</span>
+                    <span class="col-jp">オペラハウス駅</span>
+                    <span class="col-note">地下鉄駅</span>
+                </div>
+                
+                <div class="station-item">
+                    <span class="col-num">L1 03</span>
+                    <span class="col-en">Ba Son Station</span>
+                    <span class="col-jp">バーソン駅</span>
+                    <span class="col-note">地下鉄駅</span>
+                </div>
+
+                <div class="station-item">
+                    <span class="col-num">L1 04</span>
+                    <span class="col-en">Van Thanh Station</span>
+                    <span class="col-jp">ヴァンタイン公園駅</span>
+                    <span class="col-note">高架駅</span>
+                </div>
+                
+                <div class="station-item">
+                    <span class="col-num">L1 05</span>
+                    <span class="col-en">Tan Cang Station</span>
+                    <span class="col-jp">タンカン駅</span>
+                    <span class="col-note">高架駅</span>
+                </div>
+
+                <div class="station-item">
+                    <span class="col-num">L1 06</span>
+                    <span class="col-en">Thao Dien Station</span>
+                    <span class="col-jp">タオディエン駅</span>
+                    <span class="col-note">高架駅</span>
+                </div>
+
+                <div class="station-item">
+                    <span class="col-num">L1 07</span>
+                    <span class="col-en">An Phu Station</span>
+                    <span class="col-jp">アンフー駅</span>
+                    <span class="col-note">高架駅</span>
+                </div>
+
+                <div class="station-item">
+                    <span class="col-num">L1 08</span>
+                    <span class="col-en">Rach Chiec Station</span>
+                    <span class="col-jp">ラックチエク駅</span>
+                    <span class="col-note">高架駅</span>
+                </div>
+
+                <div class="station-item">
+                    <span class="col-num">L1 09</span>
+                    <span class="col-en">Phuoc Long Station</span>
+                    <span class="col-jp">フオックロン駅</span>
+                    <span class="col-note">高架駅</span>
+                </div>
+
+                <div class="station-item">
+                    <span class="col-num">L1 10</span>
+                    <span class="col-en">Binh Thai Station</span>
+                    <span class="col-jp">ビンタイ駅</span>
+                    <span class="col-note">高架駅</span>
+                </div>
+
+                <div class="station-item">
+                    <span class="col-num">L1 11</span>
+                    <span class="col-en">Thu Duc Station</span>
+                    <span class="col-jp">トゥドゥック駅</span>
+                    <span class="col-note">高架駅</span>
+                </div>
+
+                <div class="station-item">
+                    <span class="col-num">L1 12</span>
+                    <span class="col-en">High-tech Station</span>
+                    <span class="col-jp">ハイテクパーク駅</span>
+                    <span class="col-note">高架駅</span>
+                </div>
+
+                <div class="station-item">
+                    <span class="col-num">L1 13</span>
+                    <span class="col-en">National University Station</span>
+                    <span class="col-jp">国立大学駅</span>
+                    <span class="col-note">高架駅</span>
+                </div>
+
+                <div class="station-item station-end">
+                    <span class="col-num num-end">L1 14</span>
+                    <span class="col-en">Suoi Tien Station</span>
+                    <span class="col-jp">スイティエン・ターミナル駅</span>
+                    <span class="col-note">高架駅</span>
+                </div>
+
+            </div>
+            
+            <div class="back-link" style="margin-top: 30px;">
+                <a href="info-menu.html">← 路線情報メニューに戻る</a>
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                HCMC METRO
+            </div>
+
+            <nav class="footer-links">
+                <a href="about.html">会社概要</a>
+                <a href="services.html">サービス</a>
+                <a href="news.html">プレス</a>
+                <a href="careers.html">採用情報</a>
+                <a href="help.html">FAQ</a>
+                <a href="legal.html">利用規約</a>
+                <a href="help.html">お問い合わせ</a>
+            </nav>
+
+            <div class="footer-social">
+                <p>最新情報をチェック</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/MAURHCMC/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hcmc.metro/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/hcmcmetro" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@hcmcmetro" target="_blank" aria-label="Youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer-copyright">
+                &copy; 2025 HCMC Metro. All Rights Reserved.
+            </p>
+        </div>
+    </footer>            
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
