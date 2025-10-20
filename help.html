@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サポート - HCMC Metro</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
 
+    <header class="main-header">
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/HCMC_Metro_logo.png" alt="HCMC Metro Logo" id="header-logo"> 
+            </div>
+            <div class="auth-lang">
+                <span id="user-greeting" class="auth-link" style="display: none;"></span> 
+                <span id="auth-buttons">
+                    <a href="signup.html" class="auth-link">登録</a> | 
+                    <a href="login.html" class="auth-link active">ログイン</a>
+                </span>
+                <span class="lang">🇯🇵 日本語</span>
+            </div>
+        </div>
+        <h1 class="metro-title">HCMC METRO</h1>
+        <div class="datetime">
+            <p id="current-date-time"></p> 
+            <p><i class="fas fa-cloud"></i> 29°C</p>
+        </div>
+    </header>
+
+    <nav class="main-menu">
+        <a href="homepage.html" class="menu-item"><i class="fas fa-home"></i></a>
+        <a href="info-menu.html" class="menu-item" id="info-menu">一般情報</a>
+        <a href="#" class="menu-item">詳細情報</a>
+        <a href="booking.html" class="menu-item">チケット購入</a>
+        <a href="#" class="menu-item">メンテナンス</a>
+        <a href="rules.html" class="menu-item">一般規定</a>
+        <a href="help.html" class="menu-item">サポート</a>
+    </nav>
+    
+    <div id="content-container">
+        <h1 class="page-title">サポート・お問い合わせ</h1>
+
+        <div class="help-grid">
+            
+            <div class="help-box customer-care">
+                <h3>お客様対応</h3>
+                <ul>
+                    <li>営業時間: 24時間/7日</li>
+                    <li>電話番号: 028 3930 9495</li>
+                    <li>サポートメール: support@metro.com</li>
+                </ul>
+            </div>
+            
+            <div class="help-box usage-guide">
+                <h3>システム利用ガイド</h3>
+                <div id="guide-content" class="underlined-content-box">
+                    <p><a href="#">乗車券の購入方法</a></p>
+                    <p><a href="#">アカウント作成方法</a></p>
+                    <p><a href="#">その他の情報確認方法</a></p>
+                </div>
+                <button class="view-more-btn" onclick="alert('現在は追加の情報はありません。')">もっと見る</button>
+            </div>
+
+            <div class="help-box faq-section">
+                <h3>よくある質問 (FAQ)</h3>
+                <div id="faq-list" class="underlined-content-box">
+                    <p id="faq-q1"><a href="question-1.html">乗車券の購入方法を知りたいのですが？</a></p>
+                    <p id="faq-q2"><a href="question-2.html">6歳未満の子供は乗車券が必要ですか？</a></p>
+                    <p id="faq-q3"><a href="question-3.html">ベンタイン駅からスイティエン駅までの運賃を知りたいです。</a></p>
+
+                    <div id="faq-more-content" class="hidden-faq">
+                         <p><a href="#">定期券の購入方法と割引制度について教えてください。</a></p>
+                         <p><a href="#">駅のバリアフリー設備は整っていますか？</a></p>
+                         <p><a href="#">紛失物をした場合はどうすればいいですか？</a></p>
+                    </div>
+                </div>
+                <button id="toggle-faq-btn" class="view-more-btn">もっと見る</button>
+            </div>
+
+            <div class="help-box feedback-section">
+                <h3>ご意見・ご評価</h3>
+                <p>お客様からの貴重なご意見・ご評価を常に尊重しています。サービス改善のため、お気づきの点がございましたらご協力をお願いいたします。</p>
+                <button class="feedback-btn" onclick="alert('ご意見フォームへ移動します。')">ご意見を送信</button>
+            </div>
+        </div>
+
+        <div class="rating-section">
+            <h3>この情報が役に立ちましたか？</h3>
+                <div class="stars">
+                    <span class="star" data-value="1">☆</span>
+                    <span class="star" data-value="2">☆</span>
+                    <span class="star" data-value="3">☆</span>
+                    <span class="star" data-value="4">☆</span>
+                    <span class="star" data-value="5">☆</span>
+                </div>
+                    <input type="text" placeholder="ご意見をお聞かせください">
+                    <button class="submit-review-btn" onclick="alert('ご評価ありがとうございます！')">評価を送信</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                HCMC METRO
+            </div>
+
+            <nav class="footer-links">
+                <a href="about.html">会社概要</a>
+                <a href="services.html">サービス</a>
+                <a href="news.html">プレス</a>
+                <a href="careers.html">採用情報</a>
+                <a href="help.html">FAQ</a>
+                <a href="legal.html">利用規約</a>
+                <a href="help.html">お問い合わせ</a>
+            </nav>
+
+            <div class="footer-social">
+                <p>最新情報をチェック</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/MAURHCMC/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hcmc.metro/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/hcmcmetro" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@hcmcmetro" target="_blank" aria-label="Youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer-copyright">
+                &copy; 2025 HCMC Metro. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', setupFaqToggle);
+    </script>
+
+</body>
+</html>
