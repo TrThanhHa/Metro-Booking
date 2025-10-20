@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乗車券の予約と購入 - HCMC Metro</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
 
+    <header class="main-header">
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/HCMC_Metro_logo.png" alt="HCMC Metro Logo" id="header-logo"> 
+            </div>
+            <div class="auth-lang">
+                <span id="user-greeting" class="auth-link" style="display: none;"></span> 
+                <span id="auth-buttons">
+                    <a href="signup.html" class="auth-link">登録</a> | 
+                    <a href="login.html" class="auth-link active">ログイン</a>
+                </span>
+                <span class="lang">🇯🇵 日本語</span>
+            </div>
+        </div>
+        <h1 class="metro-title">HCMC METRO</h1>
+        <div class="datetime">
+            <p id="current-date-time"></p> 
+            <p><i class="fas fa-cloud"></i> 29°C</p>
+        </div>
+    </header>
+
+    <nav class="main-menu">
+        <a href="homepage.html" class="menu-item"><i class="fas fa-home"></i></a>
+        <a href="info-menu.html" class="menu-item" id="info-menu">一般情報</a>
+        <a href="#" class="menu-item">詳細情報</a>
+        <a href="booking.html" class="menu-item">チケット購入</a>
+        <a href="#" class="menu-item">メンテナンス</a>
+        <a href="rules.html" class="menu-item">一般規定</a>
+        <a href="help.html" class="menu-item">サポート</a>
+    </nav>
+    
+    <main>
+        <section class="booking-section">
+            <h2>乗車券の予約と購入</h2>
+            
+            <form id="booking-form">
+                
+                <div class="form-group">
+                    <label for="buyer-name">氏名 (Buyer Name)</label>
+                    <input type="text" id="buyer-name" required placeholder="例: Yamada Taro">
+                </div>
+
+                <div class="form-group">
+                    <label for="metro-line">メトロ路線 (Metro Line)</label>
+                    <select id="metro-line" required>
+                        <option value="" disabled selected>路線を選択してください</option>
+                        <option value="Line 1">1号線 (Ben Thanh - Suoi Tien)</option>
+                        <option value="Line 2">2号線 (Thu Thiem - Tinh lo 7)</option>
+                        <option value="Line 3">3号線 (Thai Binh - Hiep Binh)</option>
+                        <option value="Line 4">4号線 (Thanh Xuan - Hoang Van Thu)</option>
+                        <option value="Line 5">5号線 (Ba Chieu - Can Giuoc)</option>
+                        <option value="Line 6">6号線 (Dam Sen - Au Co)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>チケットの種類 (Ticket Type)</label>
+                    <select id="ticket-type" required>
+                        <option value="" disabled selected>種類を選択してください</option>
+                        <option value="single-trip">単回乗車券 (One-way ticket)</option>
+                        <option value="daily-pass">一日乗車券 (One-day ticket)</option>
+                        <option value="monthly-pass">定期券 (Monthly ticket)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>購入対象 (Passenger Type)</label>
+                    <select id="passenger-type" required>
+                        <option value="" disabled selected>対象を選択してください</option>
+                        <option value="adult">大人 (Adult)</option>
+                        <option value="student">学生/生徒 (Student)</option>
+                        <option value="child">6歳未満の子供 (Child under 6)</option>
+                        <option value="senior">高齢者 (Senior)</option>
+                    </select>
+                </div>
+
+                <div id="conditional-fields">
+                </div>
+
+                <div class="form-group total-price">
+                    <p>概算料金: <span id="total-price">--</span> VND</p>
+                </div>
+
+                <button type="submit" id="submit-booking">予約・購入を確定</button>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                HCMC METRO
+            </div>
+
+            <nav class="footer-links">
+                <a href="about.html">会社概要</a>
+                <a href="services.html">サービス</a>
+                <a href="news.html">プレス</a>
+                <a href="careers.html">採用情報</a>
+                <a href="help.html">FAQ</a>
+                <a href="legal.html">利用規約</a>
+                <a href="help.html">お問い合わせ</a>
+            </nav>
+
+            <div class="footer-social">
+                <p>最新情報をチェック</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/MAURHCMC/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hcmc.metro/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/hcmcmetro" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@hcmcmetro" target="_blank" aria-label="Youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer-copyright">
+                &copy; 2025 HCMC Metro. All Rights Reserved.
+            </p>
+        </div>
+    </footer>            
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
