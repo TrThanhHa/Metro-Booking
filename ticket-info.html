@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チケット詳細 | HCMC Metro</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="main-header">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="images/HCMC_Metro_logo.png" alt="HCMC Metro Logo" id="header-logo"> 
+                </div>
+                <div class="auth-lang">
+                    <span id="user-greeting" class="auth-link" style="display: none;"></span> 
+                    <span id="auth-buttons">
+                        <a href="signup.html" class="auth-link">登録</a> | 
+                        <a href="login.html" class="auth-link active">ログイン</a>
+                    </span>
+                    <span class="lang">🇯🇵 日本語</span>
+                </div>
+            </div>
+            <h1 class="metro-title">HCMC METRO</h1>
+            <div class="datetime">
+                <p id="current-date-time"></p> 
+                <p><i class="fas fa-cloud"></i> 29°C</p>
+            </div>
+        </header>
 
+        <nav class="main-menu">
+        <a href="homepage.html" class="menu-item"><i class="fas fa-home"></i></a>
+        <a href="info-menu.html" class="menu-item" id="info-menu">一般情報</a>
+        <a href="#" class="menu-item">詳細情報</a>
+        <a href="booking.html" class="menu-item">チケット購入</a>
+        <a href="#" class="menu-item">メンテナンス</a>
+        <a href="rules.html" class="menu-item">一般規定</a>
+        <a href="help.html" class="menu-item">サポート</a>
+    </nav>
+
+        <div id="content-container">
+            <section class="ticket-info-section">
+                <h2>🎫 チケット購入詳細 🎫</h2>
+                
+                <div id="ticket-display-area">
+                    <p>情報を読み込んでいます...</p>
+                </div>
+
+                <div class="ticket-actions">
+                    <button onclick="window.print()" class="print-button">印刷 (Print Ticket)</button>
+                    <button onclick="window.location.href='homepage.html'" class="back-button">ホームページに戻る</button>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                HCMC METRO
+            </div>
+
+            <nav class="footer-links">
+                <a href="about.html">会社概要</a>
+                <a href="services.html">サービス</a>
+                <a href="news.html">プレス</a>
+                <a href="careers.html">採用情報</a>
+                <a href="help.html">FAQ</a>
+                <a href="legal.html">利用規約</a>
+                <a href="help.html">お問い合わせ</a>
+            </nav>
+
+            <div class="footer-social">
+                <p>最新情報をチェック</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/MAURHCMC/" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/hcmc.metro/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/hcmcmetro" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@hcmcmetro" target="_blank" aria-label="Youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer-copyright">
+                &copy; 2025 HCMC Metro. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    </body>
+</html>
